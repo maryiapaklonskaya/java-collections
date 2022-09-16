@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fbfde896-4baf-41c9-93d4-4dddfc028e45" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SwapedStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SwapedStrings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,12 +57,20 @@
       <option name="project" value="LOCAL" />
       <updated>1663348485250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="swapped strings assignment">
+      <created>1663354324080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663354324080</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="classes of Java with theory and practice" />
     <MESSAGE value="new assignments are added: collectings words starting with the same letter, 2 sum problem, true\false if the character was previously saved" />
-    <option name="LAST_COMMIT_MESSAGE" value="new assignments are added: collectings words starting with the same letter, 2 sum problem, true\false if the character was previously saved" />
+    <MESSAGE value="swapped strings assignment" />
+    <option name="LAST_COMMIT_MESSAGE" value="swapped strings assignment" />
   </component>
 </project>
