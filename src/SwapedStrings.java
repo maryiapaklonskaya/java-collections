@@ -8,6 +8,9 @@ public class SwapedStrings {
     public static void main(String[] args){
         String[] arr = {"aa", "ba", "ca", "ab", "bb", "bc"};
         toSwapWords(arr);
+        String [] pairs = new String [] {"ax","bx", "cx", "cy", "by", "ay", "kx", "aw"};
+        swapPairs (pairs);
+        System.out.println(Arrays.toString(pairs));
     }
 
     public static void toSwapWords(String[] arr){
@@ -49,4 +52,25 @@ public class SwapedStrings {
         System.out.println("the final array looks like: \t" + Arrays.toString(arr));
 
     }
+
+    //ANOTHER WAY TO SOLVE
+    public static String[] swapPairs(String[] pairs) {
+        Map<String, Integer> map = new HashMap();
+        for (int i = 0; i < pairs.length; i++){
+            if (map.containsKey(pairs[i].charAt(0) + "")){
+                String newString = pairs[i];
+                pairs[i] = pairs[map.get(pairs[i].charAt(0) + "")];
+                pairs[map.get(pairs[i].charAt(0) + "")] = newString;
+                map.remove(pairs[i].charAt(0) + "");
+                System.out.println(map + " and this is " + i + " iteration");
+                System.out.println(Arrays.toString(pairs));
+            } else{
+                map.put(pairs[i].charAt(0) + "", i);
+                System.out.println(map + " and this is " + i + " iteration");
+                System.out.println(Arrays.toString(pairs));
+            }
+        }
+        return pairs;
+    }
+
 }
